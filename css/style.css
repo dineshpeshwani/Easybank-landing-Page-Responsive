@@ -1,0 +1,460 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: var(--White);
+  z-index: 1;
+}
+
+.navbar-button {
+  display: none;
+}
+
+.navbar-page-links {
+  margin-right: 1rem;
+  padding: 0 2rem;
+  color: var(--Dark-Blue);
+  text-align: center;
+  text-decoration: none;
+  display: none;
+}
+
+.introduction-page {
+  position: relative;
+  width: 100vw;
+  background: var(--Very-Light-Gray);
+}
+.background-img-mobile {
+  position: relative;
+  width: 100vw;
+  top: -0.5rem;
+}
+
+.mockup-img {
+  position: absolute;
+  width: 90vw;
+  top: -3rem;
+  left: 1.25rem;
+}
+
+.background-img-desktop {
+  display: none;
+}
+
+.easy-bank-tag-line {
+  font-size: 2rem;
+  font-family: public sans;
+  font-weight: 400;
+  color: var(--Dark-Blue);
+  text-align: center;
+  line-height: 2.5rem;
+  margin-top: auto;
+  padding: 5vw;
+}
+
+.about-easy-bank {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  text-align: center;
+  padding: 5vw;
+  line-height: 1.25rem;
+}
+
+.btn-position {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: 0;
+  padding: 0.75rem;
+  width: 8rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--White);
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.benefits-of-easy-banking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  background: var(--Light-Grayish-Blue);
+}
+
+.benefits-heading {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--Dark-Blue);
+  margin-top: 3rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+
+.benefits-description {
+  margin: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  color: var(--Grayish-Blue);
+  font-weight: 500;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vw;
+}
+
+.benefit-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.names-of-benefits {
+  font-size: 1.5rem;
+  color: var(--Dark-Blue);
+}
+
+.about-benefits-section {
+  margin-top: 1rem;
+  width: fit-content;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--Grayish-Blue);
+  line-height: 1.25rem;
+}
+
+.benefits-img {
+  padding: 1.5rem;
+}
+
+.articles-section {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  background: var(--Very-Light-Gray);
+}
+
+.article-card {
+  border-radius: 1rem;
+  background: var(--White);
+  margin-bottom: 2rem;
+}
+
+.articles-heading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.75rem;
+  color: var(--Dark-Blue);
+}
+
+.article-img {
+  width: 100%;
+  padding-bottom: rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.article-card-text {
+  padding: 1.8rem;
+}
+
+.article-author {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.article-headline {
+  margin-bottom: 1rem;
+  color: var(--Dark-Blue);
+  font-weight: 400;
+}
+
+.article-text {
+  font-size: 0.75rem;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.article-text {
+  line-height: 1rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--Dark-Blue);
+  line-height: 2rem;
+}
+
+.easy-bank-logo {
+  padding: 1.25rem 0;
+}
+
+.logo-social-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-img {
+  padding: 0.5rem;
+}
+
+.page-links {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--Light-Grayish-Blue);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.easybank-copyright {
+  font-size: 0.8rem;
+  color: var(--Grayish-Blue);
+  margin-top: auto;
+}
+
+.footer-btn-copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-footer {
+  width: 8rem;
+  border: 0;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--White);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.attribution,
+.attribution > a {
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .hamburger-menu {
+    margin: 0;
+    display: none;
+  }
+  .btn {
+    margin-bottom: 0;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-button {
+    display: block;
+  }
+
+  .navbar-desktop {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar-page-links {
+    display: flex;
+    font-size: 0.85rem;
+    color: var(--Grayish-Blue);
+  }
+
+  .navbar-page-links:hover{
+    color: black;
+  }
+
+  .introduction-page {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .background-img-mobile {
+    display: none;
+  }
+
+  .background-img-desktop {
+    display: block;
+    position: relative;
+    top: 0;
+    right: -15%;
+    width: 90%;
+    height: 100%;
+  }
+
+  .mockup-img {
+    position: absolute;
+    left: auto;
+    right: -7%;
+    top: -5rem;
+    width: 45%;
+  }
+
+  .introduction-page-images {
+    overflow-x: hidden;
+  }
+
+  .intro-page-text {
+    width: 50%;
+    padding: 15rem 9rem;
+  }
+
+  .easy-bank-tag-line {
+    text-align: left;
+    padding: 0;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .about-easy-bank {
+    text-align: left;
+    padding: 2rem 0;
+  }
+
+  .btn-position {
+    float: left;
+  }
+
+  /*Page 2*/
+
+  .benefits-of-easy-banking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 9.5%;
+  }
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .benefits-description {
+    margin: 0;
+    padding: 1rem 0;
+    width: 50%;
+    text-align: left;
+  }
+
+  .benefits-list {
+    padding: 0;
+  }
+
+  .benefit-item{
+    align-items: flex-start;
+  }
+
+  .benefits-img {
+    padding: 2rem 0;
+  }
+
+  .about-benefits-section {
+    text-align: left;
+    width: fit-content;
+  }
+
+  /*page 3*/
+
+  .all-articles-card {
+    display: flex;
+    margin: 0 3.5rem;
+  }
+  .articles-heading {
+    text-align: left;
+    margin: 0 2.85rem;
+  }
+
+  .article-headline{
+    cursor: pointer;
+  }
+  .article-headline:hover{
+    color: var(--Bright-Cyan);
+  }
+
+  .article-card{
+    margin-left: 1rem;
+  }
+  /*Footer Section*/
+
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .page-links {
+    display: flex;
+  }
+  .easy-bank-page-links-1st-half,
+  .easy-bank-page-links-2nd-half {
+    padding: 2rem;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .easy-bank-page-links-1st-half > p:hover,
+  .easy-bank-page-links-2nd-half > p:hover{
+    color: var(--Bright-Cyan);
+  }
+
+  .btn-footer {
+    float: right;
+    padding: 0.75rem;
+  }
+
+  .logo-social-links{
+    align-items: flex-start;
+    cursor: pointer;
+  }
+
+  .footer-btn-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
